@@ -1,0 +1,52 @@
+{
+    "name": "Pentagon and Signature Drawing Test",
+    "type": "pdt",
+    "preprocessing": {
+        "scaling": "yes",
+        "grayscale": "yes",
+        "normalization": "yes"
+    },
+    "tasks": [
+        {   
+            "name":"Pentagon Drawing Test",
+            "type": "pdt/rnn",
+            "resource": "assets/pentagons.svg",
+            "instruction":"Please copy the shape below, showing two overlapping pentagons that form a rhombus in the intersection.",
+            "resolution": "256x256",
+            "format": "png",
+            "model": "efficientnet_m_pentagon",
+            "models": ["efficientnet_m_pentagon"],
+            "preprocessing": {
+                "scaling": "yes",
+                "grayscale": "yes",
+                "normalization": "yes"
+            }
+        },
+        {   
+            "name":"Signature Drawing Test",
+            "type": "pdt/rnn",
+            "resource": "None",
+            "instruction":"Please write down your own signature.",
+            "resolution": "256x256",
+            "format": "png",
+            "model": "efficientnet_m_signature",
+            "models": ["efficientnet_m_signature"],
+            "preprocessing": {
+                "scaling": "yes",
+                "grayscale": "yes",
+                "normalization": "yes"
+            }
+        }
+    ],
+    "healthNotice": [
+        "We understand that receiving a negative test result can be concerning. It's important to remember that this test is not a definitive diagnosis. We strongly recommend consulting with a healthcare professional specializing in Alzheimer's and dementia for a comprehensive evaluation.",
+        "Early intervention can make a significant difference, and a specialist can provide you with the appropriate guidance and support. For more information and resources on how to seek professional help, you may visit the Alzheimer's Association <'Find Support'> page",
+        "Remember, seeking help is a positive step towards understanding and managing your health better.",
+        "https://www.alz.org/help-support"
+    ],
+    "healthStates":[
+        "The test predicted, that you are a healthy person, with an accuracy of <percent>%.",
+        "The test predicted, that you might have mild Alzheimer's disease, with an accuracy of <percent>%",
+        "The test predicted, that you might have moderate Alzheimer's disease, with an accuracy of <percent>%"
+    ]
+}

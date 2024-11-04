@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+sqlalchemy = "*"
+bcrypt = "*"
+pillow = "==9.4.0"
+torch = "*"
+python-json-logger = "*"
+flask-cors = "*"
+flask-sqlalchemy = "*"
+flask-bcrypt = "*"
+torchvision = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"

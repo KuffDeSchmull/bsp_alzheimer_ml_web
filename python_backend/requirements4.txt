@@ -1,0 +1,6 @@
+Flask
+SQLAlchemy
+bcrypt
+Pillow==9.4.0
+torch
+python-json-logger

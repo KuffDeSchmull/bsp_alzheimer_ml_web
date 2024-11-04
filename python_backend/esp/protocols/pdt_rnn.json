@@ -1,0 +1,51 @@
+{
+    "name": "Test del dibujo de Pentágono y firma del sujeto",
+    "type": "pdt",
+    "preprocessing": {
+        "scaling": "yes",
+        "grayscale": "yes",
+        "normalization": "yes"
+    },
+    "tasks": [
+        {   
+            "name":"Test del dibujo de Pentágono",
+            "type": "pdt/rnn",
+            "resource": "assets/pentagons.svg",
+            "instruction":"Por favor, copie el dibujo que se muestra en pantalla en la parte de abajo",
+            "resolution": "256x256",
+            "format": "png",
+            "model": "efficientnet_m_pentagon",
+            "models": ["efficientnet_m_pentagon"],
+            "preprocessing": {
+                "scaling": "yes",
+                "grayscale": "yes",
+                "normalization": "yes"
+            }
+        },
+        {   
+            "name":"Prueba 'firma del sujeto'",
+            "type": "pdt/rnn",
+            "resource": "None",
+            "instruction":"Por favor, firme (en este apartado or the place where the signing is to take place)",
+            "resolution": "256x256",
+            "format": "png",
+            "model": "efficientnet_m_signature",
+            "models": ["efficientnet_m_signature"],
+            "preprocessing": {
+                "scaling": "yes",
+                "grayscale": "yes",
+                "normalization": "yes"
+            }
+        }
+    ],
+    "healthNotice": [
+        "Recibir un resultado negativo de la prueba puede ser preocupante. Si bien esta prueba no es un diagnóstico definitivo, recomendamos encarecidamente consultar con un profesional sanitario especializado en Alzheimer y demencia para una evaluación completa.",
+        "La intervención temprana puede marcar una diferencia significativa, y un especialista puede proporcionarle la orientación y el apoyo adecuados.Para obtener más información sobre cómo buscar ayuda profesional, puede visitar la página de la Asociación de Alzheimer <'Find Support'>",
+        "https://www.alz.org/help-support"
+    ],
+    "healthStates":[
+        "La prueba predijo, que usted es una persona sana, con una precisión de <percent>%.",
+        "La prueba predijo, que usted podría tener la enfermedad de Alzheimer leve, con una precisión de <percent>%",
+        "La prueba predijo, que usted podría tener la enfermedad de Alzheimer moderada, con una precisión de <percent>%"
+    ]
+}

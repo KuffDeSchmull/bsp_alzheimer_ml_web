@@ -1,0 +1,34 @@
+{
+    "name": "Clock Drawing Test",
+    "type": "cdt",
+    "preprocessing": {
+        "scaling": "yes",
+        "grayscale": "yes",
+        "normalization": "yes"
+    },
+    "tasks": [{
+        "name":"Clock Drawing Test",
+        "type": "cdt/cnn",
+        "resource": "assets/clock.svg",
+        "instruction":"Please copy the clock face below, showing 10 minutes past 10.",
+        "resolution": "256x256",
+        "format": "png",
+        "model": "efficientnet_m_clock",
+        "models": ["efficientnet_m_clock"],
+        "preprocessing": {
+            "scaling": "yes",
+            "grayscale": "yes",
+            "normalization": "yes"
+        }
+    }],
+    "healthNotice": [
+        "Receiving a negative test result can be concerning. While this test is not a definitive diagnosis, we strongly recommend consulting with a healthcare professional specializing in Alzheimer's and dementia for a comprehensive evaluation.",
+        "Early intervention can make a significant difference, and a specialist can provide you with the appropriate guidance and support. For more information on how to seek professional help, you may visit the Alzheimer's Association <'Find Support'> page",
+        "https://www.alz.org/help-support"
+    ],
+    "healthStates":[
+        "The test predicted, that you are a healthy person, with an accuracy of <percent>%.",
+        "The test predicted, that you might have mild Alzheimer's disease, with an accuracy of <percent>%",
+        "The test predicted, that you might have moderate Alzheimer's disease, with an accuracy of <percent>%"
+    ]
+}

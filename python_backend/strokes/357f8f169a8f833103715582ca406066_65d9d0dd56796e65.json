@@ -1,0 +1,13 @@
+[
+    {
+        "type": "dash",
+        "from": {
+            "x": 300,
+            "y": 300
+        },
+        "coordinates": [],
+        "color": "#000000",
+        "width": 5,
+        "fill": false
+    }
+]

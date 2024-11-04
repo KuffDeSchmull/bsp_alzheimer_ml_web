@@ -1,0 +1,34 @@
+{
+    "name": "Test del Dibujo del Reloj",
+    "type": "cdt",
+    "preprocessing": {
+        "scaling": "yes",
+        "grayscale": "yes",
+        "normalization": "yes"
+    },
+    "tasks": [{
+        "name":"Test del Dibujo del Reloj",
+        "type": "cdt/cnn",
+        "resource": "assets/clock.svg",
+        "instruction":"Por favor, dibuje un reloj con manecillas que indique las 11:10",
+        "resolution": "256x256",
+        "format": "png",
+        "model": "efficientnet_m_clock",
+        "models": ["efficientnet_m_clock"],
+        "preprocessing": {
+            "scaling": "yes",
+            "grayscale": "yes",
+            "normalization": "yes"
+        }
+    }],
+    "healthNotice": [
+        "Recibir un resultado negativo de la prueba puede ser preocupante. Si bien esta prueba no es un diagnóstico definitivo, recomendamos encarecidamente consultar con un profesional sanitario especializado en Alzheimer y demencia para una evaluación completa.",
+        "La intervención temprana puede marcar una diferencia significativa, y un especialista puede proporcionarle la orientación y el apoyo adecuados.Para obtener más información sobre cómo buscar ayuda profesional, puede visitar la página de la Asociación de Alzheimer <'Find Support'>",
+        "https://www.alz.org/help-support"
+    ],
+    "healthStates":[
+        "La prueba predijo, que usted es una persona sana, con una precisión de <percent>%.",
+        "La prueba predijo, que usted podría tener la enfermedad de Alzheimer leve, con una precisión de <percent>%",
+        "La prueba predijo, que usted podría tener la enfermedad de Alzheimer moderada, con una precisión de <percent>%"
+    ]
+}

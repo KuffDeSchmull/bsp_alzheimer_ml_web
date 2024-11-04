@@ -1,0 +1,7 @@
+
+Flask @ file:///Users/cbousseau/work/recipes/ci_py311/flask_1677937489551/work
+SQLAlchemy @ file:///Users/cbousseau/work/recipes/ci_py311/sqlalchemy_1677934876727/work
+bcrypt @ file:///Users/cbousseau/work/recipes/ci_py311/bcrypt_1677931459811/work
+Pillow==9.4.0
+torch @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_1aidzjezue/croot/pytorch_1687856425340/work
+python-json-logger @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_c3baq2ko4j/croot/python-json-logger_1683823815343/work
